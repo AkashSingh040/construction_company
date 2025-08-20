@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="buildcraftstyle.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <a href="#home" class="logo">BuildCraft</a>
+                <ul class="nav-menu">
+                    <li><a href="buildcraft.html#home" class="nav-link">Home</a></li>
+                    <li><a href="buildcraft.html#about" class="nav-link">About</a></li>
+                    <li><a href="buildcraft.html#services" class="nav-link">Services</a></li>
+                    <li><a href="buildcraft.html#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="buildcraft.html#testimonials" class="nav-link">Testimonials</a></li>
+                    <li><a href="quote.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title fade-in">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-form fade-in">
+                    <form id="submitform">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="project">Project Details</label>
+                            <textarea id="project" name="project" placeholder="Tell us about your construction project..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info fade-in">
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 96100 59976 <br> +91 95287 99657</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>2023nitsgr40.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Address</h4>
+                            <p>NIT Srinagar<br>Manasbal hostel Room no:207</p>
+                        </div>
+                    </div>
+                    <div class="map-placeholder">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.8392416194!2d77.06889914705572!3d28.527252956112088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3a7c2f5d763%3A0x35d01c5cc8efb0e4!2sDelhi!5e0!3m2!1sen!2sin!4v1717435348455!5m2!1sen!2sin" 
+                            width="100%" 
+                            height="200" 
+                            style="border:0; border-radius: 10px;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>BuildCraft Construction</h3>
+                    <p>Building excellence since 2003. Your trusted partner for all construction needs.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">f</a>
+                        <a href="#" class="social-link">t</a>
+                        <a href="#" class="social-link">in</a>
+                        <a href="#" class="social-link">ig</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <p><a href="buildcraft.html#home">Home</a></p>
+                    <p><a href="buildcraft.html#about">About Us</a></p>
+                    <p><a href="buildcraft.html#services">Services</a></p>
+                    <p><a href="buildcraft.html#portfolio">Portfolio</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <p><a href="buildcraft.html#services">Residential Construction</a></p>
+                    <p><a href="buildcraft.html#services">Commercial Projects</a></p>
+                    <p><a href="buildcraft.html#services">Remodeling</a></p>
+                    <p><a href="buildcraft.html#services">Green Building</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📞 +91 9610059976</p>
+                    <p>✉️ 2023nitsgr40@gmail.com</p>
+                    <p>📍 NIT srinagar<br>Manasbal hostel, Room no:207</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BuildCraft Construction. All rights reserved. | Licensed &amp; Insured</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+  document.getElementById("submitform").addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const formData = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      phone: document.getElementById("phone").value,
+      project: document.getElementById("project").value
+    };
+
+    try {
+      const response = await fetch("http://localhost:3000/api/quote", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(formData)
+      });
+
+      const result = await response.json();
+      alert(result.message || "Quote submitted!");
+      document.getElementById("submitform").reset();
+    } catch (error) {
+      alert("Error submitting the form.");
+      console.error(error);
+    }
+  });
+</script>
+
+</body>
+</html>
